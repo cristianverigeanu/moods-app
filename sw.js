@@ -1,7 +1,7 @@
 /* MOODS — service worker.
    REGULĂ: crește CACHE_VERSION la fiecare commit care schimbă fișiere ale aplicației
    (altfel telefoanele pot rămâne cu versiunea veche). Lista FILES = tot ce trebuie offline. */
-var CACHE_VERSION = "moods-v2";
+var CACHE_VERSION = "moods-v3";
 var FILES = [
   "./", "index.html", "offline.html", "app.css", "app.js", "data.js", "fonts.css", "manifest.webmanifest",
   "icon-192.png", "icon-512.png", "apple-touch-icon.png",
@@ -17,9 +17,10 @@ self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CACHE_VERSION).then(function (c) { return c.addAll(FILES.map(function (f) { return new Request(f, { cache: "reload" }); })); }).then(function () { return self.skipWaiting(); }));
 });
 
+// Șterge DOAR cache-urile MOODS vechi: pe cristianverigeanu.github.io stau și alte aplicații (ex. Osmo).
 self.addEventListener("activate", function (e) {
   e.waitUntil(caches.keys().then(function (keys) {
-    return Promise.all(keys.filter(function (k) { return k !== CACHE_VERSION; }).map(function (k) { return caches.delete(k); }));
+    return Promise.all(keys.filter(function (k) { return k.indexOf("moods-") === 0 && k !== CACHE_VERSION; }).map(function (k) { return caches.delete(k); }));
   }).then(function () { return self.clients.claim(); }));
 });
 

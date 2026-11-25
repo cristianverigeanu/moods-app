@@ -19,6 +19,9 @@ Procedura care se aplică: `claude_code/Procedura-standard-lansare-app.docx` (5 
 - Adăugat/șters funcționalități, refactor mare sau redesign fără acordul utilizatorului.
 - Commit / push fără acordul utilizatorului.
 
+## Domeniu comun
+- Aplicația stă pe `cristianverigeanu.github.io`, împărțit cu alte aplicații (ex. Osmo): cache-urile și cheile din localStorage încep mereu cu `moods-`, iar service worker-ul șterge doar cache-uri `moods-`.
+
 ## Când crește versiunea
 - `CACHE_VERSION` din `sw.js` crește (moods-v2 → moods-v3 …) la FIECARE commit care schimbă un fișier public. `tools/check.py` pică dacă uiți.
 - Fișier public nou → adăugat în `FILES` (sw.js) și, dacă e în rădăcină, în `PUBLIC` (tools/check.py).
