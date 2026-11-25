@@ -1,6 +1,7 @@
 {
   "name": "MOODS by Roxy Salon",
   "short_name": "MOODS",
+  "description": "Hair care & styling, nail art and skin longevity. Offers, events and booking on WhatsApp.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

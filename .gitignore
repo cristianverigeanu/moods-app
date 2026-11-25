@@ -1,0 +1,7 @@
+# Documente sursă și fișiere locale: nu intră în repo-ul public
+*.docx
+*.pdf
+_local/
+_site/
+.claude/
+__pycache__/
