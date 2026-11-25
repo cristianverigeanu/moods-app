@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="140 385 815 325" width="815" height="325" xmlns:c2pa="http://c2pa.org/manifest">
+  <title>Moods by Roxy Salon</title>
+  
+  <!-- MOODS -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M172 421 L172 662 M172 421 L240 512 L309 421 L309 574"/>
+    <circle cx="414" cy="490" r="71"/>
+    <circle cx="585" cy="490" r="71"/>
+    <path d="M689 420 H731 A70 70 0 0 1 731 560 H689 Z"/>
+    <path d="M914 432 C885 414 840 416 833 455 C827 490 895 487 913 513 C928 545 868 570 832 545"/>
+  </g>
+  <!-- by roxy salon -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- b -->
+    <path d="M226 604 V660"/><circle cx="249" cy="642" r="20"/>
+    <!-- y -->
+    <path d="M293 622 V640 A18 18 0 0 0 329 640 V622 M329 640 V668 Q329 682 312 682"/>
+    <!-- r -->
+    <path d="M384 622 V662 M384 642 Q384 624 402 624"/>
+    <!-- o -->
+    <circle cx="443" cy="642" r="20"/>
+    <!-- x -->
+    <path d="M482 623 L522 662 M522 623 L482 662"/>
+    <!-- y -->
+    <path d="M549 622 V640 A18 18 0 0 0 585 640 V622 M585 640 V668 Q585 682 568 682"/>
+    <!-- s -->
+    <path d="M680 626 H652 Q638 626 638 637 Q638 646 652 646 H664 Q679 646 679 655 Q679 664 664 664 H636"/>
+    <!-- a -->
+    <circle cx="722" cy="642" r="20"/><path d="M744 622 V662"/>
+    <!-- l -->
+    <path d="M776 604 V662"/>
+    <!-- o -->
+    <circle cx="822" cy="642" r="20"/>
+    <!-- n -->
+    <path d="M866 622 V662 M866 640 Q866 624 882 624 Q899 624 899 640 V662"/>
+  </g>
+</svg>
